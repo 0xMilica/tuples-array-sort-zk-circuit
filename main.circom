@@ -1,3 +1,7 @@
+pragma circom 2.1.4;
+
+include "circomlib/comparators.circom";
+
 // Inputs:
 // * `in` is a fixed-length array of 100 tuples
 // * `match` is an arbitrary input value
