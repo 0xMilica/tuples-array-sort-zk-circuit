@@ -15,6 +15,12 @@ template Filter() {
     
     signal output num_match;
     signal output out[100][2];
+
+    // Counter initialisation for the number of matches
+    var count = 0;
+
+    // Creating a component to check for equality
+    component isEqual[100];
 }
 
 /* INPUT = {
