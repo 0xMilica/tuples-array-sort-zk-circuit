@@ -21,6 +21,21 @@ template Filter() {
 
     // Creating a component to check for equality
     component isEqual[100];
+
+    // Looping over the input array
+    for (var i = 0; i < 100; i++) {
+        // Equality check
+        isEqual[i] = IsEqual();     
+        isEqual[i].in[0] <== in[i][0];
+        isEqual[i].in[1] <== match;
+
+        // Increment the counter
+        count += isEqual[i].out;
+
+        // Adding to the output
+        out[i][0] <== in[i][0] * isEqual[i].out;
+        out[i][1] <== in[i][1] * isEqual[i].out;     
+    }
 }
 
 /* INPUT = {
