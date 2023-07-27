@@ -41,6 +41,8 @@ template Filter() {
     num_match <== count;
 }
 
+component main { public [ match ] } = Filter();
+
 /* INPUT = {
     "in": [
         [
